@@ -1,12 +1,12 @@
 <?php
 
-$to = "kshitizkathuria@gmail.com";
+$to = "kshitizkathuria07@gmail.com";
 
 $subject = "Contact Lead";
 
 $message = "hi my name is kk";
 
-$header = 'From: <kshitizkathuria07@gmail.com>' . "\r\n";
+$header = 'From: <kshitizkathuria@gmail.com>' . "\r\n";
 $header .= 'Content-type:text/plain;charset=UTF-8' . "\r\n";
 
 
