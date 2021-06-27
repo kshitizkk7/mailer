@@ -1,24 +1,11 @@
 <?php
+$to_email = "kshitizkathuria07@gmail.com";
+$subject = "Simple Email Test via PHP";
+$body = "Hi, This is test email send by PHP Script";
+$headers = "From: kshitizkathuria@gmail.com";
 
-$to = "kshitizkathuria07@gmail.com";
-
-$subject = "Contact Lead";
-
-$message = "hi my name is kk";
-
-$header = 'From: <kshitizkathuria@gmail.com>' . "\r\n";
-$header .= 'Content-type:text/plain;charset=UTF-8' . "\r\n";
-
-
-if(mail($to,$subject,$message,$header)){
-
-echo "Email send successfully";
-
-}else{
-
-echo "Email Failed";
-
+if (mail($to_email, $subject, $body, $headers)) {
+    echo "Email successfully sent to $to_email...";
+} else {
+    echo "Email sending failed...";
 }
-
-
-?>
